@@ -17,14 +17,17 @@ Inconsistencies are flagged with ⚠. None of this is an exploitability judgment
 | `liquidityTokens` | [3DOG/WETH pair `0xb5b6c3…`, WETH `0xc02aaa…`, FLOKI `0x43f11c…`] | ⚠ see note below |
 | `bondCalculator[*]` | `0x29d6f2…` for all three liquidity tokens | |
 
-**⚠ Liquidity-token registration is incoherent.** `valueOfToken` for a liquidity token calls
-`IBondCalculator.valuation(token, amount)`, and `SpecializedOlympusBondingCalculator.valuation` treats its argument as
-a **Uniswap V2 LP token** — it calls `getReserves()`, `token0()`, `token1()`, `totalSupply()` on it and takes
-`sqrt(reserve0*reserve1)`-style math. That is correct for the pair `0xb5b6c3…`, but **WETH and FLOKI are plain ERC-20s,
-not LP pairs** — they have no `getReserves()`/`token0()`. Any treasury operation that routes WETH or FLOKI through
-`valueOfToken` (`deposit` as a liquidity token, `manage`, `auditReserves`) would revert or misvalue. Today the treasury
-holds **0 WETH and 0 FLOKI**, so this is latent, but it is a real configuration inconsistency between the registered
-liquidity set and what the calculator can price.
+**⚠ Liquidity-token valuation is a flat, decimals-blind multiplier (corrected — see `audit/AUDIT.md` F-1).**
+`valueOfToken` for a liquidity token calls `IBondCalculator.valuation(token, amount)`. The **deployed**
+`SpecializedOlympusBondingCalculator` is *not* the standard Olympus RFV calculator — it does **not** call
+`getReserves()`/`token0()`/`totalSupply()`. Its full logic is `valuation(pair, amount) = amount * multipliers[pair]`
+(and `markdown` returns a constant `1`). Live multipliers are all **1** (`multipliers[LP]=multipliers[WETH]=
+multipliers[FLOKI]=1`), so `valueOfToken(token, amount) = amount`. This does **not revert** on WETH/FLOKI (no pool
+call is made), but it mis-prices: it ignores both market price and token decimals. For 18-decimal WETH this means
+`1 WETH → 1e9 3DOG` — the root of audit finding **F-1** (latent near-free mint; not currently profitable because 3DOG
+has no liquid market). Today the treasury holds 0 WETH / 0 FLOKI / 0 LP, so nothing is mispriced *in the treasury's
+current balance*, but the bond mint path is live for anyone. (This corrects an earlier draft of this note, which
+wrongly assumed the standard reserve-reading calculator and predicted a revert.)
 
 **Reserve valuation is nominal 1:1.** For reserve tokens, `valueOfToken = amount * 10^9 / 10^(tokenDecimals)`. SHIB has
 18 decimals, so 600,000,125 SHIB → ~600,000,125 "reserve units," and those units back 3DOG at ~1:1. The treasury

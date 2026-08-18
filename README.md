@@ -37,6 +37,8 @@ was not needed because nothing in the value path resisted verification. See
 | [`state/configuration.md`](state/configuration.md) | Live values of every parameter the code's correctness depends on (bond terms, epochs, rates, index), with inconsistencies flagged. |
 | [`state/balances.md`](state/balances.md) | Live balances/reserves: treasury backing, pool reserves, staked supply. |
 | [`integrity/integrity-report.md`](integrity/integrity-report.md) | Byte-for-byte checks of shared building blocks against canonical upstream. |
+| [`audit/AUDIT.md`](audit/AUDIT.md) | **Security audit** — verdict, the one latent finding (F-1: bond mispricing via calculator `multiplier=1`), and everything examined and cleared. |
+| [`audit/artifact-A-entrypoints.md`](audit/artifact-A-entrypoints.md) · [`audit/artifact-B-state-dependency-map.md`](audit/artifact-B-state-dependency-map.md) | Full entry-point enumeration and the state-dependency/composition map. |
 | [`UNRESOLVED.md`](UNRESOLVED.md) | The explicit list of what remains genuinely open (short — nothing on-chain is unread). |
 | `evidence/` | Raw JSON captured live (state, bytecode hashes, tx history) that the docs are derived from. |
 | `tools/` | The Python used to fetch source, read chain state, and hash bytecode — for reproducibility. |
