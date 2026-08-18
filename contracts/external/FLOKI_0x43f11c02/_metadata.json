@@ -1,0 +1,14 @@
+{
+  "ContractName": "FLOKI",
+  "CompilerVersion": "v0.8.4+commit.c7e474f2",
+  "OptimizationUsed": "1",
+  "Runs": "888",
+  "EVMVersion": "Default",
+  "ConstructorArguments": "",
+  "LicenseType": "",
+  "Proxy": "0",
+  "Implementation": "",
+  "SwarmSource": "",
+  "address": "0x43f11c02439e2736800433b4594994bd43cd066d",
+  "role": "FLOKI (liquidity token)"
+}

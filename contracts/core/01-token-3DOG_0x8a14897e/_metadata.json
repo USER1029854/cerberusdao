@@ -1,0 +1,14 @@
+{
+  "ContractName": "OlympusERC20Token",
+  "CompilerVersion": "v0.7.5+commit.eb77ed08",
+  "OptimizationUsed": "0",
+  "Runs": "200",
+  "EVMVersion": "Default",
+  "ConstructorArguments": "",
+  "LicenseType": "None",
+  "Proxy": "0",
+  "Implementation": "",
+  "SwarmSource": "ipfs://ea75d61d21b42f88a1f255fd6c4842f3838ec49a479cc906b3f8657f59a4266a",
+  "address": "0x8a14897ea5f668f36671678593fae44ae23b39fb",
+  "role": "Token 3DOG (mint target)"
+}

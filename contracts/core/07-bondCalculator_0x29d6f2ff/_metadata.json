@@ -1,0 +1,14 @@
+{
+  "ContractName": "SpecializedOlympusBondingCalculator",
+  "CompilerVersion": "v0.7.5+commit.eb77ed08",
+  "OptimizationUsed": "0",
+  "Runs": "200",
+  "EVMVersion": "Default",
+  "ConstructorArguments": "0000000000000000000000008a14897ea5f668f36671678593fae44ae23b39fb",
+  "LicenseType": "",
+  "Proxy": "0",
+  "Implementation": "",
+  "SwarmSource": "",
+  "address": "0x29d6f2ff916f7847ba5c086baeef36a09187f5c9",
+  "role": "Bond calculator (LP valuation)"
+}

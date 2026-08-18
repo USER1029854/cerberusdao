@@ -1,0 +1,34 @@
+{
+  "project": "CerberusDAO",
+  "token_symbol": "3DOG",
+  "token_name": "Cerberus",
+  "chain": "ethereum",
+  "chainid": 1,
+  "captured": "2026-08-18",
+  "explorer_verification": "All contracts below were VERIFIED on Etherscan at capture time (source matches deployed bytecode). No contract in the value path required decompilation.",
+  "master_authority_EOA": {
+    "address": "0xdb00139222c99e9098def2cebcd94bdcda8e7625",
+    "type": "EOA (no code)",
+    "controls": ["token.owner (can setVault -> change minter)", "treasury.manager (grants all reserve/mint roles)", "staking.manager", "sOHM.manager (setIndex/stakingContract)", "distributor.policy", "all 4 bondDepository.policy", "Claims.owner"],
+    "note": "Single private key with total control of the entire system at every layer."
+  },
+  "contracts": {
+    "0x56d595ea5591d264bc1ef9e073af66685f0bfd31": {"role": "TARGET - Treasury (token vault/minter)", "name": "MockOlympusTreasury", "verified": true, "dir": "contracts/core/02-treasury_0x56d595ea", "direction": "target"},
+    "0x8a14897ea5f668f36671678593fae44ae23b39fb": {"role": "3DOG token (mint target)", "name": "OlympusERC20Token", "verified": true, "dir": "contracts/core/01-token-3DOG_0x8a14897e", "direction": "target-token"},
+    "0x95deaf8dd30380acd6cc5e4e90e5eef94d258854": {"role": "Staking", "name": "OlympusStaking", "verified": true, "dir": "contracts/core/03-staking_0x95deaf8d", "direction": "downstream"},
+    "0xa552f061d8962be4c1f6bc6b0403ca620f569330": {"role": "Staked 3DOG (3DOGs / sOHM)", "name": "sOlympus", "verified": true, "dir": "contracts/core/04-sOHM-3DOGs_0xa552f061", "direction": "downstream"},
+    "0x63548e4894ee26e08eda08145c57ecda09cfe74a": {"role": "Staking warmup escrow", "name": "StakingWarmup", "verified": true, "dir": "contracts/core/05-warmup_0x63548e48", "direction": "downstream"},
+    "0x3878db57d6e1c15a3670d32ed15d3853bd5c6fde": {"role": "Reward manager / distributor (MINTER via treasury.mintRewards)", "name": "Distributor", "verified": true, "dir": "contracts/core/06-distributor_0x3878db57", "direction": "upstream-minter"},
+    "0x29d6f2ff916f7847ba5c086baeef36a09187f5c9": {"role": "Bond calculator (LP valuation)", "name": "SpecializedOlympusBondingCalculator", "verified": true, "dir": "contracts/core/07-bondCalculator_0x29d6f2ff", "direction": "downstream"},
+    "0x5f50d0f427228f48665fb790685c450328995c0d": {"role": "Bond depository - SHIB (MINTER via treasury.deposit)", "name": "MockOlympusBondDepository", "verified": true, "dir": "contracts/core/08-bondDepo-SHIB_0x5f50d0f4", "direction": "upstream-minter"},
+    "0xd2e0bd64b3e6fbc4d09f9a11e5852bf9a46a6731": {"role": "Bond depository - 3DOG/WETH LP (MINTER via treasury.deposit)", "name": "MockOlympusBondDepository", "verified": true, "dir": "contracts/core/09-bondDepo-LP_0xd2e0bd64", "direction": "upstream-minter"},
+    "0x30f5039447b8aef529db99324896b14d453d85fa": {"role": "Bond depository - WETH (MINTER via treasury.deposit)", "name": "MockOlympusBondDepository", "verified": true, "dir": "contracts/core/10-bondDepo-WETH_0x30f50394", "direction": "upstream-minter"},
+    "0xf0c2b0ec587155abe978ae47705f0c619f44bc65": {"role": "Bond depository - FLOKI (MINTER via treasury.deposit)", "name": "MockOlympusBondDepository", "verified": true, "dir": "contracts/core/11-bondDepo-FLOKI_0xf0c2b0ec", "direction": "upstream-minter"},
+    "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce": {"role": "Reserve token: SHIB (backs 3DOG in treasury)", "name": "TokenMintERC20Token", "verified": true, "dir": "contracts/external/SHIB_0x95ad61b0", "direction": "downstream-asset"},
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {"role": "WETH (LP quote asset; treasury liquidity token)", "name": "WETH9", "verified": true, "dir": "contracts/external/WETH_0xc02aaa39", "direction": "downstream-asset", "canonical": true},
+    "0x43f11c02439e2736800433b4594994bd43cd066d": {"role": "FLOKI (treasury liquidity token)", "name": "FLOKI", "verified": true, "dir": "contracts/external/FLOKI_0x43f11c02", "direction": "downstream-asset"},
+    "0xb5b6c3816c66fa6bc5b189f49e5b088e2de5082a": {"role": "3DOG/WETH Uniswap V2 pair (treasury liquidity token; price source for LP bond)", "name": "UniswapV2Pair", "verified": true, "dir": "contracts/external/UniswapV2Pair-3DOG-WETH_0xb5b6c381", "direction": "downstream-asset", "bytecode_matches_canonical_univ2pair": true},
+    "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f": {"role": "Uniswap V2 Factory (created the pair)", "name": "UniswapV2Factory", "verified": true, "dir": "contracts/external/UniswapV2Factory_0x5c69bee7", "direction": "downstream-infra", "canonical": true},
+    "0xddb175adfe07304aa0e1371bfb99ce5ef15b7055": {"role": "Peripheral wind-down/refund contract (burn 3DOG -> proportional ETH). No authority over token/treasury. Currently empty/inert.", "name": "Claims", "verified": true, "dir": "contracts/peripheral/Claims_0xddb175ad", "direction": "peripheral"}
+  }
+}

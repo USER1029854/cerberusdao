@@ -1,0 +1,12 @@
+{
+  "ContractName": "Claims",
+  "CompilerVersion": "v0.8.11+commit.d7f03943",
+  "Proxy": "0",
+  "Implementation": "",
+  "OptimizationUsed": "0",
+  "Runs": "200",
+  "EVMVersion": "Default",
+  "ConstructorArguments": "",
+  "LicenseType": "None",
+  "SwarmSource": "ipfs://e6680bec75e496765316eac4691cfc110f00081cc1f77785d265c9b6575271f7"
+}

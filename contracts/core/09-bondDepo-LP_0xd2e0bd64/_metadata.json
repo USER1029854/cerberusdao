@@ -1,0 +1,14 @@
+{
+  "ContractName": "MockOlympusBondDepository",
+  "CompilerVersion": "v0.7.5+commit.eb77ed08",
+  "OptimizationUsed": "0",
+  "Runs": "200",
+  "EVMVersion": "Default",
+  "ConstructorArguments": "0000000000000000000000008a14897ea5f668f36671678593fae44ae23b39fb000000000000000000000000b5b6c3816c66fa6bc5b189f49e5b088e2de5082a00000000000000000000000056d595ea5591d264bc1ef9e073af66685f0bfd31000000000000000000000000db00139222c99e9098def2cebcd94bdcda8e76250000000000000000000000000000000000000000000000000000000000000000",
+  "LicenseType": "",
+  "Proxy": "0",
+  "Implementation": "",
+  "SwarmSource": "",
+  "address": "0xd2e0bd64b3e6fbc4d09f9a11e5852bf9a46a6731",
+  "role": "Bond depository 3DOG/WETH LP (liquidity, MINTER)"
+}

@@ -1,0 +1,25 @@
+{
+  "target": "0x56d595ea5591d264bc1ef9e073af66685f0bfd31",
+  "chain": "ethereum",
+  "chainid": 1,
+  "project": "CerberusDAO (3DOG)",
+  "master_authority_EOA": "0xdb00139222c99e9098def2cebcd94bdcda8e7625",
+  "contracts": {
+    "0x56d595ea5591d264bc1ef9e073af66685f0bfd31": {"role":"Treasury (target)","name":"MockOlympusTreasury","dir":"contracts/core/02-treasury_0x56d595ea"},
+    "0x8a14897ea5f668f36671678593fae44ae23b39fb": {"role":"Token 3DOG (mint target)","name":"OlympusERC20Token","dir":"contracts/core/01-token-3DOG_0x8a14897e"},
+    "0x95deaf8dd30380acd6cc5e4e90e5eef94d258854": {"role":"Staking","name":"OlympusStaking","dir":"contracts/core/03-staking_0x95deaf8d"},
+    "0xa552f061d8962be4c1f6bc6b0403ca620f569330": {"role":"Staked token sOHM (3DOGs)","name":"sOlympus","dir":"contracts/core/04-sOHM-3DOGs_0xa552f061"},
+    "0x63548e4894ee26e08eda08145c57ecda09cfe74a": {"role":"Staking warmup","name":"StakingWarmup","dir":"contracts/core/05-warmup_0x63548e48"},
+    "0x3878db57d6e1c15a3670d32ed15d3853bd5c6fde": {"role":"Reward manager / staking distributor (MINTER)","name":"Distributor","dir":"contracts/core/06-distributor_0x3878db57"},
+    "0x29d6f2ff916f7847ba5c086baeef36a09187f5c9": {"role":"Bond calculator (LP valuation)","name":"SpecializedOlympusBondingCalculator","dir":"contracts/core/07-bondCalculator_0x29d6f2ff"},
+    "0x5f50d0f427228f48665fb790685c450328995c0d": {"role":"Bond depository SHIB (reserve, MINTER)","name":"MockOlympusBondDepository","dir":"contracts/core/08-bondDepo-SHIB_0x5f50d0f4"},
+    "0xd2e0bd64b3e6fbc4d09f9a11e5852bf9a46a6731": {"role":"Bond depository 3DOG/WETH LP (liquidity, MINTER)","name":"MockOlympusBondDepository","dir":"contracts/core/09-bondDepo-LP_0xd2e0bd64"},
+    "0x30f5039447b8aef529db99324896b14d453d85fa": {"role":"Bond depository WETH (MINTER)","name":"MockOlympusBondDepository","dir":"contracts/core/10-bondDepo-WETH_0x30f50394"},
+    "0xf0c2b0ec587155abe978ae47705f0c619f44bc65": {"role":"Bond depository FLOKI (MINTER)","name":"MockOlympusBondDepository","dir":"contracts/core/11-bondDepo-FLOKI_0xf0c2b0ec"},
+    "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce": {"role":"Reserve token SHIB","name":"TokenMintERC20Token","dir":"contracts/external/SHIB_0x95ad61b0"},
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {"role":"WETH (reserve/liq token; LP quote)","name":"WETH9","dir":"contracts/external/WETH_0xc02aaa39"},
+    "0x43f11c02439e2736800433b4594994bd43cd066d": {"role":"FLOKI (liquidity token)","name":"FLOKI","dir":"contracts/external/FLOKI_0x43f11c02"},
+    "0xb5b6c3816c66fa6bc5b189f49e5b088e2de5082a": {"role":"3DOG/WETH Uniswap V2 pair (liquidity token)","name":"UniswapV2Pair","dir":"contracts/external/UniswapV2Pair-3DOG-WETH_0xb5b6c381"},
+    "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f": {"role":"Uniswap V2 Factory (pair creator)","name":"UniswapV2Factory","dir":"contracts/external/UniswapV2Factory_0x5c69bee7"}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ContractName": "StakingWarmup",
+  "CompilerVersion": "v0.7.5+commit.eb77ed08",
+  "OptimizationUsed": "0",
+  "Runs": "200",
+  "EVMVersion": "Default",
+  "ConstructorArguments": "00000000000000000000000095deaf8dd30380acd6cc5e4e90e5eef94d258854000000000000000000000000a552f061d8962be4c1f6bc6b0403ca620f569330",
+  "LicenseType": "",
+  "Proxy": "0",
+  "Implementation": "",
+  "SwarmSource": "",
+  "address": "0x63548e4894ee26e08eda08145c57ecda09cfe74a",
+  "role": "Staking warmup"
+}

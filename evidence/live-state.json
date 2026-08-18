@@ -1,0 +1,135 @@
+{
+  "token_owner": "0xdb00139222c99e9098def2cebcd94bdcda8e7625",
+  "token_vault": "0x56d595ea5591d264bc1ef9e073af66685f0bfd31",
+  "token_totalSupply": 36265670253321338,
+  "treasury_manager": "0xdb00139222c99e9098def2cebcd94bdcda8e7625",
+  "treasury_totalReserves": 600000022034567090,
+  "treasury_totalDebt": 0,
+  "treasury_excessReserves": 563734351781245752,
+  "staking_manager": "0xdb00139222c99e9098def2cebcd94bdcda8e7625",
+  "staking_warmupPeriod": 0,
+  "staking_totalBonus": 0,
+  "staking_distributor": "0x3878db57d6e1c15a3670d32ed15d3853bd5c6fde",
+  "staking_locker": "0x0000000000000000000000000000000000000000",
+  "staking_epoch": {
+    "length": 2200,
+    "number": 220,
+    "endBlock": 14174600,
+    "distribute": 0
+  },
+  "sohm_manager": "0xdb00139222c99e9098def2cebcd94bdcda8e7625",
+  "sohm_stakingContract": "0x95deaf8dd30380acd6cc5e4e90e5eef94d258854",
+  "sohm_index": 3082759239,
+  "sohm_totalSupply": 3082759239191397734,
+  "sohm_INDEX": 115792089237316195423570985008687907853269984665640564039457000000000,
+  "dist_manager": null,
+  "dist_epochLength": 2200,
+  "dist_nextEpochBlock": 14174600,
+  "dist_info0": {
+    "rate": 0,
+    "recipient": "0x95deaf8dd30380acd6cc5e4e90e5eef94d258854"
+  },
+  "dist_adjust0": {
+    "add": false,
+    "rate": 0,
+    "target": 0
+  },
+  "bonds": {
+    "SHIB": {
+      "address": "0x5f50d0f427228f48665fb790685c450328995c0d",
+      "principal": "SHIB",
+      "terms": {
+        "controlVariable": 50,
+        "vestingTerm": 33110,
+        "minimumPrice": 0,
+        "maxPayout": 1000,
+        "fee": 0,
+        "maxDebt": 0
+      },
+      "totalDebt": 430205562720073857,
+      "currentDebt": 0,
+      "bondPriceInUSD": 1000000000000000000,
+      "maxPayout": 362656702533213,
+      "debtRatio": 0,
+      "manager": null
+    },
+    "LP": {
+      "address": "0xd2e0bd64b3e6fbc4d09f9a11e5852bf9a46a6731",
+      "principal": "LP",
+      "terms": {
+        "controlVariable": 25,
+        "vestingTerm": 33110,
+        "minimumPrice": 0,
+        "maxPayout": 1000,
+        "fee": 0,
+        "maxDebt": 0
+      },
+      "totalDebt": 127025817483790836,
+      "currentDebt": 0,
+      "bondPriceInUSD": 1000000000000000000,
+      "maxPayout": 362656702533213,
+      "debtRatio": 0,
+      "manager": null
+    },
+    "WETH": {
+      "address": "0x30f5039447b8aef529db99324896b14d453d85fa",
+      "principal": "WETH",
+      "terms": {
+        "controlVariable": 25,
+        "vestingTerm": 33110,
+        "minimumPrice": 0,
+        "maxPayout": 1000,
+        "fee": 0,
+        "maxDebt": 0
+      },
+      "totalDebt": 7409243518248030900,
+      "currentDebt": 0,
+      "bondPriceInUSD": 1000000000000000000,
+      "maxPayout": 362656702533213,
+      "debtRatio": 0,
+      "manager": null
+    },
+    "FLOKI": {
+      "address": "0xf0c2b0ec587155abe978ae47705f0c619f44bc65",
+      "principal": "FLOKI",
+      "terms": {
+        "controlVariable": 25,
+        "vestingTerm": 33110,
+        "minimumPrice": 0,
+        "maxPayout": 1000,
+        "fee": 0,
+        "maxDebt": 0
+      },
+      "totalDebt": 210134091255278525,
+      "currentDebt": 0,
+      "bondPriceInUSD": 1000000000,
+      "maxPayout": 362656702533213,
+      "debtRatio": 0,
+      "manager": null
+    }
+  },
+  "treasury_bal_SHIB": 600000125274567108347323436,
+  "treasury_bal_WETH": 0,
+  "treasury_bal_FLOKI": 0,
+  "treasury_bal_LP": 0,
+  "treasury_bal_3DOG": 0,
+  "treasury_eth": 0,
+  "staking_bal_3DOG": 30067913680744245,
+  "warmup_bal_sOHM": 1068998975657616,
+  "lp_reserves": {
+    "reserve0_3DOG": 1068388773916,
+    "reserve1_WETH": 193565,
+    "ts": 1733597759
+  },
+  "lp_totalSupply": 1000,
+  "lp_bal_3DOG": 1068388773916,
+  "lp_bal_WETH": 193565,
+  "master_bal_3DOG": 0,
+  "master_bal_LP": 0,
+  "master_bal_sOHM": 2929739792777671,
+  "master_eth": 150885458640000,
+  "distributor_policy": "0xdb00139222c99e9098def2cebcd94bdcda8e7625",
+  "staking_bal_sOHM": 3052701412950813186,
+  "sohm_initializer": "0x0000000000000000000000000000000000000000",
+  "bond_policy_all": "0xdb00139222c99e9098def2cebcd94bdcda8e7625"
+}

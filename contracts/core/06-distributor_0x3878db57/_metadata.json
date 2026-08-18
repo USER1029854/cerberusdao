@@ -1,0 +1,14 @@
+{
+  "ContractName": "Distributor",
+  "CompilerVersion": "v0.7.5+commit.eb77ed08",
+  "OptimizationUsed": "0",
+  "Runs": "200",
+  "EVMVersion": "Default",
+  "ConstructorArguments": "00000000000000000000000056d595ea5591d264bc1ef9e073af66685f0bfd310000000000000000000000008a14897ea5f668f36671678593fae44ae23b39fb00000000000000000000000000000000000000000000000000000000000008980000000000000000000000000000000000000000000000000000000000d0ef80",
+  "LicenseType": "",
+  "Proxy": "0",
+  "Implementation": "",
+  "SwarmSource": "",
+  "address": "0x3878db57d6e1c15a3670d32ed15d3853bd5c6fde",
+  "role": "Reward manager / staking distributor (MINTER)"
+}

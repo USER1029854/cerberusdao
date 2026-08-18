@@ -1,0 +1,42 @@
+{
+  "LP pair 3DOG/WETH (b5b6)": {
+    "hash": "5b83bdbcc56b2e630f2807bbadd2b0c21619108066b92a58de081261089e9ce5",
+    "len": 11293
+  },
+  "CANONICAL UniV2Pair USDC/WETH": {
+    "hash": "5b83bdbcc56b2e630f2807bbadd2b0c21619108066b92a58de081261089e9ce5",
+    "len": 11293
+  },
+  "CANONICAL UniV2Pair DAI/WETH": {
+    "hash": "5b83bdbcc56b2e630f2807bbadd2b0c21619108066b92a58de081261089e9ce5",
+    "len": 11293
+  },
+  "WETH9 (c02a canonical addr)": {
+    "hash": "d0a06b12ac47863b5c7be4185c2deaad1c61557033f56c7d4ea74429cbb25e23",
+    "len": 3124
+  },
+  "UniV2Factory (5c69)": {
+    "hash": "bab145d02e7005f0d84c6c1639d39b799b0ea16df99ebbdaf5a14d9da820b4e0",
+    "len": 13859
+  },
+  "CANONICAL UniV2Factory": {
+    "hash": "bab145d02e7005f0d84c6c1639d39b799b0ea16df99ebbdaf5a14d9da820b4e0",
+    "len": 13859
+  },
+  "BondDepo SHIB (5f50)": {
+    "hash": "1edd079dfaad729f5218fc6292e138f5eaa7057379e96e780093d5b4db376492",
+    "len": 16815
+  },
+  "BondDepo LP (d2e0)": {
+    "hash": "a289a35084b1f413e26f1cd6afe1367668bed41c817c91e8bb2ba6c5c0f43b04",
+    "len": 16815
+  },
+  "BondDepo WETH (30f5)": {
+    "hash": "5e9f5334e610fef9129aafe134a1a80f920a5dc7be1e8f92206c151d685b1dcc",
+    "len": 16815
+  },
+  "BondDepo FLOKI (f0c2)": {
+    "hash": "c18f4b0781ca9660696989004e1521f3405cb1973d803a7dbefa4c2ad4931d98",
+    "len": 16815
+  }
+}

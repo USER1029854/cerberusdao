@@ -1,0 +1,14 @@
+{
+  "ContractName": "UniswapV2Factory",
+  "CompilerVersion": "v0.5.16+commit.9c3226ce",
+  "OptimizationUsed": "1",
+  "Runs": "999999",
+  "EVMVersion": "istanbul",
+  "ConstructorArguments": "000000000000000000000000c0a4272bb5df52134178df25d77561cfb17ce407",
+  "LicenseType": "GNU GPLv3",
+  "Proxy": "0",
+  "Implementation": "",
+  "SwarmSource": "bzzr://2760f92d7fa1db6f5aa16307bad65df4ebcc8550c4b1f03755ab8dfd830c178f",
+  "address": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+  "role": "Uniswap V2 Factory (pair creator)"
+}

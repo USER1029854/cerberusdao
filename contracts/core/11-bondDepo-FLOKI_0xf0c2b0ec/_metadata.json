@@ -1,0 +1,14 @@
+{
+  "ContractName": "MockOlympusBondDepository",
+  "CompilerVersion": "v0.7.5+commit.eb77ed08",
+  "OptimizationUsed": "0",
+  "Runs": "200",
+  "EVMVersion": "Default",
+  "ConstructorArguments": "0000000000000000000000008a14897ea5f668f36671678593fae44ae23b39fb00000000000000000000000043f11c02439e2736800433b4594994bd43cd066d00000000000000000000000056d595ea5591d264bc1ef9e073af66685f0bfd31000000000000000000000000db00139222c99e9098def2cebcd94bdcda8e76250000000000000000000000000000000000000000000000000000000000000000",
+  "LicenseType": "",
+  "Proxy": "0",
+  "Implementation": "",
+  "SwarmSource": "",
+  "address": "0xf0c2b0ec587155abe978ae47705f0c619f44bc65",
+  "role": "Bond depository FLOKI (MINTER)"
+}
